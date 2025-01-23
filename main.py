@@ -16,7 +16,6 @@ for room_type,price in data_dict["assignment_results"][0]["shown_price"].items()
             min_price =(room_type,price)
             flag= 0
         else:
-             #comparing beteween the room prices
             if float(price)< float(min_price[1]):
                min_price= (room_type,price)
 #Pulling the tax values
