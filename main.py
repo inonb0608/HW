@@ -29,6 +29,8 @@ total_tax = sum([float(num) for num in numbers])
 
 for room_type,price  in data_dict["assignment_results"][0]['net_price'].items():
     hotel_dict[room_type] = float(price)+total_tax
+for room_type, price in hotel_dict.items():
+        print(room_type+" "+f'{price:.2f}\n')
 #Writing all the results into txt file.
 with open("Hotels-HW.txt", 'w') as file:
      #Clearing the file from data
